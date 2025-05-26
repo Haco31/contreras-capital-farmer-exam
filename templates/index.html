@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cotizaciones - Capital & Farmer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Cotizaciones Legales</h1>
+        <form action="/generar-cotizacion" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre del cliente:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="tipo_servicio">Tipo de servicio:</label>
+                <select id="tipo_servicio" name="tipo_servicio" required>
+                    <option value="">Seleccione un servicio</option>
+                    <option value="Constitución de empresa">Constitución de empresa</option>
+                    <option value="Defensa laboral">Defensa laboral</option>
+                    <option value="Consultoría tributaria">Consultoría tributaria</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="descripcion">Descripción del caso:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+            </div>
+            
+            <button type="submit">Generar Cotización</button>
+        </form>
+    </div>
+</body>
+</html>
