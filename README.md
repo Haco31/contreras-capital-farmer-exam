@@ -24,5 +24,15 @@ Sistema web para generar cotizaciones legales con integración de IA.
    Se mostrará la cotización en formato JSON.
    Cada cotización se guarda automáticamente en cotizaciones.db (SQLite).
 
+## Características implementadas
+
+- Sistema completo de cotizaciones con frontend y backend
+- Integración con OpenAI para análisis de casos legales
+- Base de datos SQLite para almacenamiento persistente
+- Diseño responsive para móviles
+- Validaciones básicas de formulario
+- Generación de números de cotización únicos
+- Visualización profesional de resultados
+
 NOTA:
 - Si deseas ver las cotizaciones guardadas, puedes usar un visor de SQLite como DB Browser for SQLite.
